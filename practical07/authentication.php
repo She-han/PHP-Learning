@@ -6,7 +6,7 @@ mysqli_select_db($conn,'emarketing');
 
 extract($_POST);
 
-if($_POST['loginBtn']){
+if(isset($_POST['loginBtn'])){
 
   $sql = "select user_id,role from user where username='".$username."' and password='".MD5($pwd)."'";
 
@@ -17,8 +17,8 @@ if($_POST['loginBtn']){
   }
   $row = mysqli_fetch_assoc($result);
 
-  $_session['role']=$row['role'];
-  $_session['user_id']=$row['user_id'];
+  $_SESSION['role']=$row['role'];
+  $_SESSION['user_id']=$row['user_id'];
 
   if($row['role']=='buyer'){
     header("location:viewitems.php");

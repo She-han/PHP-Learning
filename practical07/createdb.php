@@ -28,7 +28,7 @@ if(!$result){
 }
 
 $sql2 = "CREATE TABLE IF NOT EXISTS item (
-          itemcode int auto_increment primary key, 
+          itemcode int primary key, 
           itemname varchar(100), 
           price decimal(10,2), 
           seller_id int,
