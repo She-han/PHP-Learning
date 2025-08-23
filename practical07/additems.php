@@ -12,7 +12,7 @@ if(!isset($_SESSION['role']) || $_SESSION['role'] != 'seller'){
 $message = "";
 
 if(isset($_POST['addBtn'])){
-  
+
   $seller_id = $_SESSION['user_id'];
   extract($_POST);
 
@@ -35,7 +35,7 @@ if(isset($_POST['addBtn'])){
 <body>
 
   </br>
-  <a href='signout.php'>Sign Out</a></br>
+  <a href='logout.php'>Sign Out</a></br>
   <a href='added_items.php'>View Items</a></br>
 
   <form action="" method="post" >
