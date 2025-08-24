@@ -4,15 +4,31 @@
   <script src="jquery-3.7.1.min.js"></script>
   <script>
     $(document).ready(function(){
-      var w = $("#img").width();
-      var h = $("#img").height();
+      var or_w = $("#img").width();   //or-w = original width
+      var or_h = $("#img").height();
 
-      
+      $("#img").hover(
+        function(){
+          $(this).animate({
+            width:or_w*1.2,
+            height:or_h*1.2
+          },400);
+        },
+        function(){
+          $(this).animate({
+            width:or_w,
+            height:or_w
+          },400);
+        }
+    
+      );
+
+
 
     });  
   </script>
 
-  <p id="p1">Shehan Induwara</p>
-  <img id="img" src=""/>
+  <p id="p1">Image Animation</p>
+  <img id="img" src="colar.webp"/>
 </body>
 </html>
