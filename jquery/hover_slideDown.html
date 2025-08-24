@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $("#list1,#list2").css({
+        "display":"none"
+      });
+
+      $("#lv1").hover(
+        function(){
+            $("#list1").slideDown();
+        },
+        function(){
+            $("#list1").slideUp();
+        }  
+      );
+      $("#lv2").hover(
+        function(){
+            $("#list2").slideDown();
+        },
+        function(){
+            $("#list2").slideUp();
+        }  
+      );
+    });
+  </script>
+
+  <h2 id="lv1">Level 01</h2>
+    <ul id="list1">
+      <li>C programming</li>
+      <li>Data structures</li>
+      <li>web development</li>
+    </ul>
+  <h2 id="lv2">Level 02</h2>
+    <ul id="list2">
+      <li>Java programming</li>
+      <li>Higher structures</li>
+      <li>SQL development</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("p").css({
+        "color":"red",
+        "font-size":"45px"
+      });
+      $("#p1").css({
+        "color":"green",
+        "font-size":"45px"
+      });
+
+      $("#b1").click(function(){
+        $("#p1").fadeOut();
+      });
+
+      $("#b2").click(function(){
+        $("#p1").fadeIn();
+      });
+    });  
+  </script>
+
+  <p id="p1">Shehan Induwara</p>
+  <button id="b1">Hide</button>
+  <button id="b2">Show</button>
+</body>
+</html>
