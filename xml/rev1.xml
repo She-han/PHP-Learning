@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE stock[
+  <!ELEMENT stock (newcar+, usedcar+)>
+  <!ELEMENT newcar (model, price)>
+  <!ELEMENT usedcar (model, price, mileage, condition?)>
+  <!ELEMENT model EMPTY>
+  <!ATTLIST model name CDATA #REQUIRED>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT mileage (#PCDATA)>
+  <!ELEMENT condition (#PCDATA)>
+]>
+
+<stock>
+
+  <newcar>
+    <model name="toyota"/>
+    <price>10000</price>
+  </newcar>
+
+  <newcar>
+    <model name="ddd"/>
+    <price>20000$$</price>
+  </newcar>
+
+  <usedcar>
+    <model name="vvv"/>
+    <price>5000$</price>
+    <mileage>2000km</mileage>
+    <condition>good</condition>
+  </usedcar>
+
+  <usedcar>
+    <model name="xxxx"/>
+    <price>3500$</price>
+    <mileage>7500km</mileage>
+  </usedcar>
+
+</stock>

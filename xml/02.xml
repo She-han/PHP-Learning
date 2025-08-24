@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE menu[
+  <!ELEMENT menu (category, item+)>
+  <!ELEMENT category (#PCDATA)>
+  <!ELEMENT item (name, desc, price)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT desc (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+]>
+
+<menu>
+  <category>International Foods</category>
+  <item>
+    <name>aaa</name>
+    <desc>aaaaaaaaaaaaaa</desc>
+    <price>100</price>
+  </item>
+  <item>
+    <name>bbb</name>
+    <desc>bbbbbbbbbbbbbb</desc>
+    <price>200</price>
+  </item>
+  <item>
+    <name>ccc</name>
+    <desc>cccccccccccccc</desc>
+    <price>300</price>
+  </item>
+</menu>
